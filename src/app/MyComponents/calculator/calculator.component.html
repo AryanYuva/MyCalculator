@@ -1,0 +1,37 @@
+<div class="maincontainer">
+<div class="container">
+    <h3 class="mb-4 text-center">Calculator</h3>
+  <form class="center">
+    <input #box (keyup.enter)="evaluate2(box.value)" type="text" class="mb-3" name="toshow" [(ngModel)]="toshow"/>
+  </form>
+  <div class="buttonstyle">
+    <button class="preetybutton btn btn-warning mb-2" type="button" (click)="AllClear()">Ac</button>
+    <button class="preetybutton btn btn-warning mb-2" type="button" (click)="back()">Back</button>
+    <button class="preetybutton btn btn-warning mb-2" type="button"(click)="inputno('%')">%</button>
+    <button class="preetybutton btn btn-warning mb-2" type="button" (click)="inputno('/')">/</button>
+  </div>
+  <div class="buttonstyle">
+    <button class="preetybutton btn btn-primary mb-2" type="button" (click)="inputno('7')">7</button>
+    <button class="preetybutton btn btn-primary mb-2" type="button" (click)="inputno('8')">8</button>
+    <button class="preetybutton btn btn-primary mb-2" type="button" (click)="inputno('9')">9</button>
+    <button class="preetybutton btn btn-warning mb-2" type="button" (click)="inputno('*')">X</button>
+  </div>
+  <div class="buttonstyle">
+    <button class="preetybutton btn btn-primary mb-2" type="button" (click)="inputno('4')">4</button>
+    <button class="preetybutton btn btn-primary mb-2" type="button" (click)="inputno('5')">5</button>
+    <button class="preetybutton btn btn-primary mb-2" type="button" (click)="inputno('6')">6</button>
+    <button class="preetybutton btn btn-warning mb-2" type="button" (click)="inputno('-')">-</button>
+  </div>
+  <div class="buttonstyle">
+    <button class="preetybutton btn btn-primary mb-2" type="button" (click)="inputno('1')">1</button>
+    <button class="preetybutton btn btn-primary mb-2" type="button" (click)="inputno('2')">2</button>
+    <button class="preetybutton btn btn-primary mb-2" type="button" (click)="inputno('3')">3</button>
+    <button class="preetybutton btn btn-warning mb-2" type="button" (click)="inputno('+')">+</button>
+  </div>
+  <div class="buttonstyle">
+    <button class="preetybutton btn btn-primary mb-2" type="button" (click)="inputno('.')">.</button>
+    <button class="preetybutton btn btn-primary mb-2" type="button" (click)="inputno('0')">0</button>
+    <button class="preetybutton btn btn-success mb-2" type="button" (click)="evaluate()">=</button>
+  </div>
+</div>
+</div>
